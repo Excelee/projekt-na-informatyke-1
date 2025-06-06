@@ -1,0 +1,16 @@
+[
+  {
+    "Imię": "Jan",
+    "Nazwisko": "Kowalski",
+    "Telefon": "123456789",
+    "Ulica": "fajna",
+    "Miasto": "Fajnowo"
+  },
+  {
+    "Imię": "naJ",
+    "Nazwisko": "ikslawoK",
+    "Telefon": "987654321",
+    "Ulica": "niefajna",
+    "Miasto": "Slabowo"
+  }
+]
