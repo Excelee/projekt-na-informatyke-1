@@ -75,7 +75,7 @@ class ksiazka_adresowaApp(QtWidgets.QWidget):
         self.remove_btn.clicked.connect(self.usuwanie)
 
         self.szukanie_field = QtWidgets.QComboBox()
-        self.szukanie_field.dodajs(["Imię", "Nazwisko", "Telefon", "Ulica", "Miasto"])
+        self.szukanie_field.addItems(["Imię", "Nazwisko", "Telefon", "Ulica", "Miasto"])
         self.szukanie_input = QtWidgets.QLineEdit()
         self.szukanie_btn = QtWidgets.QPushButton("Szukaj")
         self.szukanie_btn.clicked.connect(self.szukanie)
@@ -126,7 +126,7 @@ class ksiazka_adresowaApp(QtWidgets.QWidget):
             adres = self.ksiazka.adres if isinstance(self.ksiazka.adres, list) else []
         self.list_widget.clear()
         for a in adres:
-            self.list_widget.dodaj(f"{a['Imię']} {a['Nazwisko']}, tel: {a['Telefon']}, {a['Ulica']}, {a['Miasto']}")
+            self.list_widget.addItem(f"{a['Imię']} {a['Nazwisko']}, tel: {a['Telefon']}, {a['Ulica']}, {a['Miasto']}")
 
     def usuwanie(self):
         row = self.list_widget.currentRow()
